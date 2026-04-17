@@ -341,14 +341,16 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.Black_and_White_Minimalist_GYM_Center_Logo;
-            pictureBox1.Location = new Point(85, 61);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(237, 250);
+            pictureBox1.Size = new Size(422, 340);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label7
             // 
@@ -367,6 +369,7 @@
             Controls.Add(label7);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;

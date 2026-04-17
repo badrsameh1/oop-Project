@@ -12,6 +12,7 @@ namespace oop_Project
 {
     public partial class FormChangePassword : Form
     {
+        
 
         public FormChangePassword()
         {
@@ -30,6 +31,7 @@ namespace oop_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             string code = txtCode.Text;
             string newPassword = txtPass.Text;
             string confirmPassword = txtPassConfirm.Text;

@@ -90,11 +90,12 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.Black_and_White_Minimalist_GYM_Center_Logo;
-            pictureBox1.Location = new Point(79, 61);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(237, 250);
+            pictureBox1.Size = new Size(422, 340);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -121,7 +122,7 @@
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(350, 340);
-            panel1.TabIndex = 3;
+            panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // linkLabel1
@@ -214,6 +215,7 @@
             // 
             // txtPassConfirm
             // 
+            txtPassConfirm.BackColor = Color.White;
             txtPassConfirm.BorderStyle = BorderStyle.None;
             txtPassConfirm.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPassConfirm.Location = new Point(1, 3);
@@ -337,6 +339,7 @@
             // 
             // txtPass
             // 
+            txtPass.BackColor = Color.White;
             txtPass.BorderStyle = BorderStyle.None;
             txtPass.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPass.Location = new Point(1, 3);
@@ -445,9 +448,10 @@
             // 
             // txtCode
             // 
+            txtCode.BackColor = Color.White;
             txtCode.BorderStyle = BorderStyle.None;
             txtCode.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCode.Location = new Point(0, -1);
+            txtCode.Location = new Point(1, 1);
             txtCode.Margin = new Padding(3, 2, 3, 2);
             txtCode.Name = "txtCode";
             txtCode.Size = new Size(230, 19);
@@ -473,12 +477,13 @@
             Controls.Add(label7);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FormChangePassword";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Change Password";
-            TransparencyKey = Color.Transparent;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

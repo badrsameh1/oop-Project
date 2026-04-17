@@ -4,8 +4,8 @@ namespace oop_Project
 {
     public partial class FormLogIn : Form
     {
-        
-       
+
+
         public FormLogIn()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace oop_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             string name = txtname.Text;
             string password = txtPassword.Text;
 
@@ -59,6 +59,11 @@ namespace oop_Project
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
